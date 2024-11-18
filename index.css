@@ -1,0 +1,97 @@
+:root{
+    --primary: hsl(243, 75%, 59%);
+    --on-background-color: hsl(0, 0%, 100%);
+}
+
+html{
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e9e9ed;
+}
+
+.icon{
+    width: 22px;
+    height: 22px;
+    fill: hsl(0, 0%, 100%);
+}
+
+.timer{
+    background-color: hsl(0, 0%, 100%);
+    padding: 1em;
+    border-radius: 1em;
+}
+
+.timer .time{
+    width: 198px;
+    height: 198px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("./images/blob.svg");
+    background-size: 223px;
+    color: var(--on-background-color);
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 2.5px;
+}
+
+.timer .settings{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 224px;
+    margin-inline: auto;
+}
+
+.timer .settings .start-pause-button{
+    width: 48px;
+    height: 48px;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    padding-left: 4px;
+    background-color: var(--primary);
+    user-select: none;
+}
+
+.timer .settings .session {
+    padding: 1em;
+    display: flex;
+}
+.timer .settings .session .session-button{
+    width: 82px;
+    height: 32px;
+    border: none;
+    border-radius: 2em;
+    padding-inline: 8px;
+    margin-inline: 1em;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--primary);
+    color: var(--on-background-color);
+    cursor: pointer;
+    font-family: inherit;
+    text-transform: uppercase;
+    font-size: 10px;
+    letter-spacing: 1.5px;
+    user-select: none;
+}
